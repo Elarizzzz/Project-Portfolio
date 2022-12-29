@@ -1,6 +1,10 @@
 @import url('./_reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
+
+
+/* header codes start */
 header{
     display: flex;
     justify-content: space-between;
@@ -32,3 +36,76 @@ header nav a{
 body{
     font-family: 'Roboto',sans-serif ;
 }
+/* header codes end */
+/*Introduction codes start  */
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 112.5px;
+    padding-right: 112.5px;
+    flex-wrap: wrap;
+}
+.introduction .left-side{
+    padding-top: 117px;
+    min-width: 700px;
+}
+.introduction h1{
+    font-size: 72px;
+    font-weight: 700;
+
+}
+.introduction .left-side h1 span{
+    color: #ff8a56;
+}
+.introduction .left-side p{
+    color: #666;
+    padding-top: 34px;
+    padding-bottom: 34px;
+
+}
+.introduction .left-side button{
+    width: 151px;
+    height: 58px;
+    background-color:#333 ;
+    color: #fff;
+}
+.introduction .left-side .button-groups a{
+    text-decoration: none;
+    color:#000 ;
+    padding-left: 12px;
+}
+.introduction .left-side .button-groups{
+    display: flex;
+    align-items: center;
+}
+@media(max-width:1427px) and (min-width:836px){
+    .introduction .left-side {
+        align-items: center; 
+    }
+    .introduction .right-side{
+        margin: 0 auto;
+    }
+}
+@media(max-width:768px){
+    .introduction{
+        padding-left: 30px;
+    }
+    .introduction .left-side{
+        min-width: 500px;
+
+    }
+    .introduction .left-side h1{
+        font-size: 48px;
+        text-align: center;
+    }
+    .introduction .left-side p{
+        text-align: center;
+    }
+    .button-groups{
+        margin: 20px auto;
+    }
+    .introduction .right-side{
+        margin: 0 auto;
+    }
+}
+/*Introduction codes end  */
